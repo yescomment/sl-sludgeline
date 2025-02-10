@@ -24,12 +24,6 @@
             </footer>
         </section>
 
-        {{#unless @member.paid}}
-            <section>
-                {{> "content-cta"}}
-            </section>
-        {{/unless}}
-
         {{#if @custom.enter_tag_slugs_for_primary_sections}}
             {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
                 {{#foreach tags}}

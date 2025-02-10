@@ -28,12 +28,6 @@ figcaption {
     font-weight: 500;
 }
 
-header#gh-head {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
 body:not(.is-head-stacked) .gh-head {
     height: 88px;
 }
@@ -909,31 +903,11 @@ body:not(.home-template) .gh-topic-grid .gh-card {
 
 .gh-post-upgrade-cta::before {
     content: "";
+    color: blue;
     position: absolute;
     left:0;
     top:-15em;
     height: 15em;
     width: 100%;
     background: linear-gradient(transparent,var(--color-white) 85%);
-}
-
-/* Sludge Orange for Subscribe buttons */
-/* I believe buttom two won't work as they are in iframes */
-/* But posting here to show I tried */
-.sl-money-btn,
-.kg-button-card .kg-btn-accent,
-.gh-post-upgrade-cta-content,
-.gh-portal-triggerbtn-container,
-.gh-portal-btn-product .gh-portal-btn {
-    --brandcolor: #f9812a;
-    background-color: var(--brandcolor) !important;
-}
-
-/* Hide text fadeout gradient on homepage CTA */
-.home-template .gh-post-upgrade-cta::before {
-    content: none !important;
-}
-
-.home-template .gh-post-upgrade-cta {
-    margin-block: 2rem;
 }

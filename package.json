@@ -83,26 +83,6 @@
                 "type": "text",
                 "default": "Don't miss out on the latest news. Sign up now to get access to the library of members-only articles."
             },
-            "cta_home_free_title": {
-                "type": "text",
-                "default": "Subscribe to Sludge for Full Access",
-                "description": "Header in homepage CTA shown to logged-in members on the free tier"
-            },
-            "cta_home_free_lede": {
-                "type": "text",
-                "default": "",
-                "description": "Body text in homepage CTA shown to logged-in members on the free tier; leave blank to hide."
-            },
-            "cta_home_nonmember_title": {
-                "type": "text",
-                "default": "Sign Up for Our Newsletter",
-                "description": "Header in homepage CTA shown to anonymous (not logged in) users"
-            },
-            "cta_home_nonmember_lede": {
-                "type": "text",
-                "default": "",
-                "description": "Body text in homepage CTA shown to anonymous (not logged in) users; leave blank to hide."
-            },
             "cta_free_title": {
                 "type": "text",
                 "default": "Get this full story for free",

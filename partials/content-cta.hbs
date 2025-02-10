@@ -1,27 +1,17 @@
 {{{html}}}
 <aside class="gh-post-upgrade-cta">
     <div class="gh-post-upgrade-cta-content" style="background-color: {{@site.accent_color}}">
-        {{#is "home"}}
-            {{#if @member}}
-                <h2>{{@custom.cta_home_free_title}}</h2>
-                <p>{{@custom.cta_home_free_lede}}</p>
-            {{else}}
-                <h2>{{@custom.cta_home_nonmember_title}}</h2>
-                <p>{{@custom.cta_home_nonmember_lede}}</p>
-            {{/if}}
-        {{else}}
-            {{#has visibility="paid"}}
-                <h2>{{@custom.cta_paid_title}}</h2>
-                <p>{{@custom.cta_paid_lede}}</p>
-            {{/has}}
-            {{#has visibility="members"}}
-                <h2>{{@custom.cta_free_title}}</h2>
-                <p>{{@custom.cta_free_lede}}</p>
-            {{/has}}
-            {{#has visibility="tiers"}}
-                <h2>This {{#is "page"}}page{{else}}post{{/is}} is for subscribers on the {{tiers}} only </h2>
-            {{/has}}
-        {{/is}}
+        {{#has visibility="paid"}}
+            <h2>{{@custom.cta_paid_title}}</h2>
+            <p>{{@custom.cta_paid_lede}}</p>
+        {{/has}}
+        {{#has visibility="members"}}
+            <h2>{{@custom.cta_free_title}}</h2>
+            <p>{{@custom.cta_free_lede}}</p>
+        {{/has}}
+        {{#has visibility="tiers"}}
+            <h2>This {{#is "page"}}page{{else}}post{{/is}} is for subscribers on the {{tiers}} only </h2>
+        {{/has}}
         {{#if @member}}
             <a class="gh-btn" data-portal="account/plans" style="color:{{@site.accent_color}}">Upgrade your subscription</a>
         {{else}}
